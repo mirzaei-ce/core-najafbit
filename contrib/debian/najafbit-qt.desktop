@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Najafbit
+Comment=Najafbit P2P Cryptocurrency
+Comment[fr]=Najafbit, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Najafbit, eşten eşe kriptografik sanal para birimi
+Exec=najafbit-qt %u
+Terminal=false
+Type=Application
+Icon=najafbit128
+MimeType=x-scheme-handler/najafbit;
+Categories=Office;Finance;

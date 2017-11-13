@@ -1,0 +1,5 @@
+Building Najafbit
+
+See doc/build-*.md for instructions on building najafbitd,
+the intended-for-services, no-graphical-interface, reference
+implementation of Najafbit.

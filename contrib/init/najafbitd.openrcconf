@@ -1,0 +1,33 @@
+# /etc/conf.d/najafbitd: config file for /etc/init.d/najafbitd
+
+# Config file location
+#NAJAFBITD_CONFIGFILE="/etc/najafbit/najafbit.conf"
+
+# What directory to write pidfile to?  (created and owned by $NAJAFBITD_USER)
+#NAJAFBITD_PIDDIR="/var/run/najafbitd"
+
+# What filename to give the pidfile
+#NAJAFBITD_PIDFILE="${NAJAFBITD_PIDDIR}/najafbitd.pid"
+
+# Where to write najafbitd data (be mindful that the blockchain is large)
+#NAJAFBITD_DATADIR="/var/lib/najafbitd"
+
+# User and group to own najafbitd process
+#NAJAFBITD_USER="najafbit"
+#NAJAFBITD_GROUP="najafbit"
+
+# Path to najafbitd executable
+#NAJAFBITD_BIN="/usr/bin/najafbitd"
+
+# Nice value to run najafbitd under
+#NAJAFBITD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+NAJAFBITD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for najafbitd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+NAJAFBITD_SIGTERM_TIMEOUT=60
